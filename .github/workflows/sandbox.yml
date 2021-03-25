@@ -15,4 +15,4 @@ jobs:
           deno-version: v1.x
       - run: |
           deno --version
-          deno run https://deno.land/std/examples/welcome.ts
+          deno run --allow-net=randomuser.me ${GITHUB_WORKSPACE}/src/runHttp.ts https://randomuser.me/api/
